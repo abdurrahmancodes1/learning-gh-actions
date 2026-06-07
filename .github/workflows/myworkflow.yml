@@ -1,0 +1,17 @@
+name: My First workflow
+on: workflow_dispatch
+jobs:
+  my-firstjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List all files
+        run: ls -a
+      - name: Print working directory
+        run: pwd
+      - name: create JS file
+        run: |
+          echo "console.log('Hello World')" > index.js
+      - name: Run Node.js file
+        run: node app.js
+      - name: List all files
+        run: ls -a
