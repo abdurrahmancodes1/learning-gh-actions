@@ -10,7 +10,7 @@ jobs:
         run: pwd
       - name: create JS file
         run: |
-          echo "console.log('Hello World')" > index.js
+          echo "console.log('Hello World')" > app.js
       - name: Run Node.js file
         run: node app.js
       - name: List all files
